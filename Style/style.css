@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+*{
+    font-family: 'Tilt Warp', cursive;
+}
+
+h1{
+    text-align: center;
+}
+
+body{
+    background-color: #000000;
+}
+
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+.sidenav {
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  
+  .sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .main {
+    margin-left: 160px; /* Same as the width of the sidenav */
+    font-size: 28px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+
+.sm{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    width: 500;
+
+    
+}
+
+.General-div{
+    background-color: #fff;
+    border-radius: 20px;
+    width: auto;
+    /* margin-left: 600px; */
+
+
+    
+    
+}
+
+.addMemberForm{
+    display: flex;
+    justify-content: center;
+}
+
+#familyTable{
+    text-align: center;
+    padding: 7px;
+    margin-left: 6px;
+}
+
+.tablebody{
+    display: flex;
+    justify-content: center;
+}
+
+#familyTable thead tr th{
+    margin-left: 6px;
+    font-family: 'Montserrat', sans-serif!important;
+}
+
+button{
+    border-radius: 8px;
+    background-color: #fff;
+    border-color: #4CAF50;
+    transition-duration: 0.4s;
+}
+
+button:hover{
+    background-color: #4CAF50; 
+    color: white;
+}
+
+.addotherpayments{
+    display: flex;
+    justify-content: center;
+}
+
+.addotherpayments  input {
+    display: block;
+    margin-top: 7px;
+}
+
+.addotherpayments label{
+    display: inline-block;
+}
+.addotherpayments button{
+    margin-top: 7px;
+}
+
+.addMemberForm input,button{
+    margin-top: 6px;
+}
+
+.globalOutput{
+    text-align: center; 
+}
+
+.globalOutput span{
+    display: block;
+}
+
+.newDisplay{
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+}
+
+.row{
+    background-color: #fff;
+    border-radius: 20px;
+    width: auto;
+}
+
+.container{
+    padding: 50px, 0px, 50px, 0;
+}
+
+.newDisplay {
+    margin-left: 400px;
+}
+
+.newDisplay input{
+    display: block;
+}
+
+.newDisplay .row{
+    padding: 20px;
+}

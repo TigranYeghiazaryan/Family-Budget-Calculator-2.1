@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Family Budget Calculator</title>
+    <link rel="icon" type="photos/x-icon" href="./favicon/budget.ico">
+    <link rel="stylesheet" href="Style/style.css">
+  </head>
+  <body>
+    <div class="sidenav">
+      <a href="general.html">Go back to Home</a>
+      <a id="clear" href="#" onclick="refresh()">CLEAR 🗑️</a>
+    </div>
+    <div class="sm" id="sm-div">
+    <div class="General-div">
+    <h1>Family Budget Calculator</h1>
+    <div class="addMemberForm">
+    <form>
+      <label for="member">Family Member:</label>
+      <input type="text" id="member" name="member"><br><br>
+      <label for="budget">Budget:</label>
+      <input type="number" id="budget" name="budget"><br><br>
+      <label for="spending">Spending:</label>
+      <input type="number" id="spending" name="spending" value="0"><br><br>
+      <button type="button" onclick="addFamilyMember()">Add Family Member</button>
+    </form>
+    </div>
+    <br>
+    <br>
+    <div class="tablebody">
+    <table id="familyTable">
+      <thead>
+        <tr>
+          <th>Member</th>
+          <th>Budget</th>
+          <th>Spending</th>
+          <th>Remaining Budget</th>
+        </tr>
+      </thead>
+      <tbody id="familyTableBody">
+      </tbody>
+    </table>
+    </div>
+    <br>
+    <br>
+    <div class="addMemberForm">
+    <form>
+      <label for="utility-bills">Utility Bills:</label>
+      <input type="number" id="utility-bills" name="utility-bills"><br>
+      <br>
+      <label for="education-payment">Education (annual):</label>
+      <input type="number" id="education-payment" name="education-payment"><br>
+      <br>
+      <label for="other-payment">Other Payment:</label>
+      <input type="number" id="other-payment" name="other-payment"><br>
+      <br>
+     <button type="button" onclick="calculateTotal()">Calculate Total</button>
+    </form>
+    </div>
+    <br>
+    <br>
+    <div class="globalOutput">
+      <span id="total"></span>
+      <br>
+      <span id="budgetlast"></span>
+      <br>
+      <span id="members-spends"></span>
+      <br>
+      <span id="mem-remain"></span>
+      <br>
+      <span id="last-budget"></span>
+    </div>
+    </div>
+    
+    <script src="Script/script.js"></script>
+  </body>
+</html>
